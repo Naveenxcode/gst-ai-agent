@@ -1,0 +1,53 @@
+# =====================
+# Node Modules
+# =====================
+backend/node_modules/
+
+# =====================
+# Build / Dist
+# =====================
+dist/
+build/
+
+# =====================
+# Environment Variables
+# =====================
+.env
+.env.local
+.env.*.local
+
+# =====================
+# Logs
+# =====================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =====================
+# OS Files
+# =====================
+.DS_Store
+Thumbs.db
+
+# =====================
+# IDE Files
+# =====================
+.vscode/
+.idea/
+
+# =====================
+# TypeScript
+# =====================
+*.tsbuildinfo
+
+# =====================
+# Vite
+# =====================
+frontend/dist/
+
+# =====================
+# Backend Specific
+# =====================
+uploads/
