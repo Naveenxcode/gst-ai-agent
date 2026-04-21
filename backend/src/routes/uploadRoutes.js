@@ -1,7 +1,11 @@
 const express = require("express");
 const router = express.Router();
 const upload = require("../utils/upload");
-const { uploadFiles } = require("../controllers/uploadController");
+const {
+  uploadFiles,
+  getAllResults,
+  getSummary
+} = require("../controllers/uploadController");
 
 router.post(
   "/upload",
@@ -12,4 +16,7 @@ router.post(
   uploadFiles
 );
 
-module.exports = router;
+router.get("/reconciliation", getAllResults);
+router.get("/summary", getSummary);
+
+module.exports = router; 
